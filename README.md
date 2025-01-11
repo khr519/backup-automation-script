@@ -28,8 +28,8 @@ Creating archive at "/mnt/backup/backup::AUTO-2025-01-11-11-39"
 ```
 # How to use
 If someone is reading this and wants to use this script, please note that
-0. Use this script at your own risk.
-1. The script can only be used with backup drives that has LUKS encrypted partitions. (or you can edit the script so that it fits your setup)
+1. Use this script at your own risk.
+2. The script can only be used with backup drives that has LUKS encrypted partitions. (or you can edit the script so that it fits your setup)
    Read this article in the ArchWiki for more info: https://wiki.archlinux.org/title/Dm-crypt/Encrypting_a_non-root_file_system
 3. You need to initialize the borg repository. (sudo borg init --encryption=none /path/to/repo)
 4. You need to change the #Define variables part in the script according to your setup.
