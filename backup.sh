@@ -10,6 +10,8 @@ NAME="ArchBackup" # Name of the backup device. Used for mapper, script output.
 
 PRUN="AUTO" # Prefix to use for backups that are included in pruning
 
+BACKUP="/etc /home /usr /boot /var/lib/pacman"
+
 # Number of backups to keep when pruning
 a=7  # daily
 b=5  # weekly
@@ -54,8 +56,7 @@ then
 
 	echo "** Creating backup '$bname' **"
 	sudo borg create -v -p --stats --exclude-caches \
-	    "$REPOSITORY"::"$bname" \
-	    /etc /home /usr /boot /var/lib/pacman
+	    "$REPOSITORY"::"$bname" $BACKUP
 fi
 
 # Show archives
