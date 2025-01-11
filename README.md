@@ -47,6 +47,8 @@ NAME="ArchBackup" # Name of the backup device. Used for mapper, script output.
 
 PRUN="AUTO" # Prefix to use for backups that are included in pruning
 
+BACKUP=(/usr /home) # Path to include in backup
+
 # Number of backups to keep when pruning
 a=7  # daily
 b=5  # weekly
