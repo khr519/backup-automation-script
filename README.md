@@ -20,6 +20,8 @@ Enter passphrase for /dev/sda2:
 ** Creating backup 'AUTO-2025-01-11-11-39' **
 Creating archive at "/mnt/backup/backup::AUTO-2025-01-11-11-39"
 
+( a list of archives that will be pruned is shown )
+
 << Prune? >> [y/N]: 
 ** Aborting **
 << [E]xit | [u]nmount | [d]elete archive >> [E/u/d]: u
